@@ -6,23 +6,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-html {
-    font-size: 62.5%;
-}
-
-html, 
 body {
-    width: 100%;
     background-color: #E8ECEF;
 }
-
-body {
-    font-size: 1.6rem;
-}
-
 header {
-    background-color:  #DFB73B;
     height: 80px;
 }
 
@@ -37,7 +24,7 @@ header {
 }
 
 .logo {
-     font-size: 3.5rem;
+     font-size: 35px;
      font-family: 'Roboto', sans-serif;
      color: #FFFFFF;
 }
@@ -46,32 +33,30 @@ header {
     color: #3C2313;
     font-weight: 900;
 }
-
 .menu {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 15px;
     
 }
-
-.menu ul {
-    display: flex;
-}
-
 .menu ul li {
     list-style: none;
+    display: inline-block;
     margin-right: 15px;
 }
 
 .menu a {
     text-decoration: none;
     color: #FFFFFF;
-    text-transform: uppercase;
-      
 }
 
 .menu a:hover {
     color: #3C2313;
-    font-weight: bold;
+}
+@media (max-height:425px) {
+    header {
+        background-color:  #DFB73B;
+        height: 400px;
+    }
 }
 
 /* BANNER */
@@ -130,13 +115,13 @@ article {
 .conteudo-texto h2 {
     margin-top: 20px;
     text-align: center;
-    font-size: 2.0rem;
+    font-size: 20px;
     padding-bottom: 10px;
     color:#1F2E45;
 }
 .conteudo-texto p {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 13px;
     color: #1F2E45;
 }
 /* PLAYER DE VIDEO */
@@ -159,7 +144,7 @@ article {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -230,7 +215,7 @@ iframe {
 
 .menu-footer i {
     color: #FFFFFF;
-    font-size: 4.0rem;
+    font-size: 60px;
 }
 
 .menu-footer i:hover {
@@ -251,34 +236,4 @@ iframe {
     justify-content: center;
     align-items: center;
     font-size: 12px;
-}
-
-@media (max-width: 768px){
-    html {
-        font-size: 50%;
-    }
-}
-
-
-
-@media (max-width: 525px){
-    
-    header {
-        height: 100%;
-    }
-    .container {
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 20px;
-    }
-    .menu ul {
-        flex-direction: column;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-   }
-   .menu li {
-       padding: 10px;
-   }
-  
 }
